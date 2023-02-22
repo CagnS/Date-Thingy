@@ -1,0 +1,16 @@
+from datetime import datetime
+
+# Get the first date from the user
+date_str1 = input("Enter the first date (YYYY-MM-DD): ")
+date1 = datetime.strptime(date_str1, "%Y-%m-%d")
+
+# Get the second date from the user
+date_str2 = input("Enter the second date (YYYY-MM-DD): ")
+date2 = datetime.strptime(date_str2, "%Y-%m-%d")
+
+# Calculate the difference in days
+delta = date2 - date1
+diff_in_days = delta.days
+
+# Output the result to the user
+print("The difference between", date_str1, "and", date_str2, "is", diff_in_days, "days.")
